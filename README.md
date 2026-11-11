@@ -28,6 +28,12 @@ The purpose of this project is to set up the ESP32-CAM using Arduino IDE and lea
 3. I added my name to the repository name.
 4. I opened the README.md file to edit the documentation.
 5. I added my name, project title, purpose, and Arduino IDE download link.
+6. I downloaded and installed Arduino IDE 2.3.10 on my computer.
+7. I opened Arduino Preferences and added the ESP32 board manager URL.
+8. I opened Boards Manager and installed ESP32 by Espressif Systems version 3.3.12.
+9. I selected AI Thinker ESP32-CAM as my board.
+10. I opened the WiFiScan example from the Arduino examples menu.
+11. I clicked Verify to check the code, and it compiled without errors.
 
 ## Problems and Solutions
 1. Problem: At first, I had trouble finding where to create my own GitHub fork.
@@ -43,4 +49,9 @@ Camera init failed with error 0x105
 **Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
 
 ## Final Report
-I created my own GitHub repository by forking the template provided by my professor. I updated the README file with my name, project information, and the steps I followed. My next step is to install Arduino IDE and set up the ESP32-CAM for Wi-Fi scanning.
+
+For this lab, I created my own GitHub repository by forking my professor's template. I updated the README file with my project information and documented the steps I followed.
+
+I also installed Arduino IDE 2.3.10 and added the ESP32 board package by Espressif Systems. After selecting the AI Thinker ESP32-CAM board, I opened the WiFiScan example and verified the code. The program compiled successfully without any errors.
+
+I learned how to use GitHub to document my work and how to prepare Arduino IDE for an ESP32 project. I have not tested the Wi-Fi scanner on a physical ESP32-CAM yet.
