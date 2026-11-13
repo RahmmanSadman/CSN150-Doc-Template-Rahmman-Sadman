@@ -55,3 +55,60 @@ For this lab, I created my own GitHub repository by forking my professor's templ
 I also installed Arduino IDE 2.3.10 and added the ESP32 board package by Espressif Systems. After selecting the AI Thinker ESP32-CAM board, I opened the WiFiScan example and verified the code. The program compiled successfully without any errors.
 
 I learned how to use GitHub to document my work and how to prepare Arduino IDE for an ESP32 project. I have not tested the Wi-Fi scanner on a physical ESP32-CAM yet.
+
+
+---
+
+# Lab: ESP32 Camera
+
+**Student:** Rahmman Sadman  
+**Class:** CSN 150 D03  
+**Project:** ESP32-CAM Camera Firmware
+
+
+## Purpose
+
+The purpose of this lab was to install the camera firmware on my ESP32-CAM using Arduino IDE. I also learned how to connect the camera to my Wi-Fi network and view live video through a web browser.
+
+
+## Equipment
+
+- ESP32-CAM (AI Thinker)
+- USB data cable
+- Computer running Windows 11
+- Arduino IDE 2.3.10
+- Google Chrome
+- 2.4 GHz Wi-Fi network
+
+
+## Steps I Followed
+
+1. I connected my ESP32-CAM to my computer using a USB cable.
+2. I opened Arduino IDE 2.3.10.
+3. I opened the CameraWebServer example from the ESP32 camera examples.
+4. I selected AI Thinker ESP32-CAM as my board and COM3 as my port.
+5. I opened board_config.h and selected CAMERA_MODEL_AI_THINKER.
+6. I entered my Wi-Fi information in the CameraWebServer code.
+7. I checked the board settings and uploaded the camera firmware.
+8. I opened Serial Monitor and set the baud rate to 115200.
+9. I pressed the reset button on my ESP32-CAM.
+10. The Serial Monitor showed that the camera connected to Wi-Fi successfully.
+11. I opened the camera's IP address in Google Chrome.
+12. I clicked Start Stream and was able to see live video from my ESP32-CAM.
+13. I took a screenshot of the camera software with the camera pointed at myself.
+
+
+## Problems and Solutions
+
+1. Problem: The CameraWebServer example had the wrong camera model selected.
+   Solution: I opened board_config.h and changed the camera model to AI Thinker ESP32-CAM.
+
+2. Problem: At first, the Serial Monitor showed a Wi-Fi connection warning.
+   Solution: After restarting the ESP32-CAM, it successfully connected to my Wi-Fi network and displayed the camera IP address.
+
+
+## Final Report
+
+In this lab, I was able to get my ESP32-CAM working using Arduino IDE. I uploaded the camera firmware and connected the camera to my Wi-Fi network. After opening the IP address in Google Chrome, I was able to see live video from the camera.
+
+I learned how to set up the camera, use Serial Monitor to find its IP address, and access the camera through a web browser. Overall, the lab was successful because the camera worked and I was able to take a screenshot of the live video.
